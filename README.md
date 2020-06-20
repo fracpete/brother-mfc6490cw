@@ -61,10 +61,10 @@ Arch Linux pacakges for Brother MFC-6490CW printer.
   sudo /usr/local/Brother/Printer/mfc6490cw/cupswrapper/cupswrappermfc6490cw
   ```
 
-* setup scanner
+* setup scanner (assuming IP 192.168.X.Y)
 
   ```
-  brsaneconfig3 -a name=SCANNER model=MFC-6490CW ip=192.168.2.50
+  brsaneconfig3 -a name=SCANNER model=MFC-6490CW ip=192.168.X.Y
   brsaneconfig3 -q | grep SCANNER
   sudo brsaneconfig3 -d
   ```
