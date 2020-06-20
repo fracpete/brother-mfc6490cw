@@ -1,7 +1,7 @@
-# brother-mfc6490cw-arch
-Arch Linux pacakges for Brother MFC-6490CW printer.
+# Brother MFC-6490CW - Arch Linux
+Arch Linux packages for Brother MFC-6490CW printer.
 
-## Arch
+## Basics
 
 * How to package a deb for arch
 
@@ -10,9 +10,9 @@ Arch Linux pacakges for Brother MFC-6490CW printer.
 * PKGBUILD
 
   https://wiki.archlinux.org/index.php/PKGBUILD
-  
 
-## Brother
+
+## Resources
 
 * Support page
 
