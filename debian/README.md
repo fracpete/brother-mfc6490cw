@@ -40,19 +40,24 @@ under Debian-based systems.
   sudo adduser saned lp
   ```
 
-* add remote printer (assuming IP 192.68.X.Y`):
+* add remote scanner (assuming IP 192.68.X.Y`):
 
   ```
   brsaneconfig3 -a name=SCANNER model=MFC-6490CW ip=192.168.X.Y
   ```
 
-* check for remote printer:
+* check for remote scanner:
 
   ```
   brsaneconfig3 -q | grep SCANNER
+  scanimage -L
   ```
 
 * reboot your system
+
+* search in CUPS for printer using IP `192.168.X.Y` and select the correct
+  PPD file from the *Brother* section.
+
 
 ### USB connection
 
