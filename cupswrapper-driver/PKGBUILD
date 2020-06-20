@@ -1,0 +1,14 @@
+# Maintainer: John Doe <joe@example.com>
+pkgname=brother-mfc6490cw-cups-bin
+pkgver=1.1.2
+pkgrel=2
+pkgdesc="CUPS wrapper driver for Brother MFC6490CW printer"
+arch=("i686" "x86_64")
+url="https://support.brother.com/g/b/producttop.aspx?c=us&lang=en&prod=mfc6490cw_all"
+license=("EULA")
+groups=("base-devel")
+source=("https://download.brother.com/welcome/dlf006182/mfc6490cwcupswrapper-1.1.2-2.i386.deb")
+md5sums=('8c0c560d2fd9b7a019f26968c47e8a0a')
+package() {
+        tar -xf data.tar.gz -C "${pkgdir}"
+}
