@@ -9,14 +9,6 @@ under Debian-based systems.
 
   https://support.brother.com/g/b/producttop.aspx?c=us&lang=en&prod=mfc6490cw_all
 
-* Scanner driver
-
-  https://download.brother.com/welcome/dlf006641/brscan3-0.2.13-1.i386.deb
-
-* Scan key tool
-
-  https://download.brother.com/welcome/dlf006651/brscan-skey-0.3.1-1.i386.deb
-
 * LPR printer driver
 
   https://download.brother.com/welcome/dlf006180/mfc6490cwlpr-1.1.2-2.i386.deb
@@ -24,6 +16,14 @@ under Debian-based systems.
 * CUPSWrapper printer driver
 
   https://download.brother.com/welcome/dlf006182/mfc6490cwcupswrapper-1.1.2-2.i386.deb
+
+* Scanner driver
+
+  https://download.brother.com/welcome/dlf006641/brscan3-0.2.13-1.i386.deb
+
+* Scan key tool
+
+  https://download.brother.com/welcome/dlf006651/brscan-skey-0.3.1-1.i386.deb
 
 
 ## Commands

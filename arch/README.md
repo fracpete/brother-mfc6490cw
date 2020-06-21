@@ -18,14 +18,6 @@ Arch Linux packages for Brother MFC-6490CW printer.
 
   https://support.brother.com/g/b/producttop.aspx?c=us&lang=en&prod=mfc6490cw_all
 
-* Scanner driver
-
-  https://download.brother.com/welcome/dlf006641/brscan3-0.2.13-1.i386.deb
-
-* Scan key tool
-
-  https://download.brother.com/welcome/dlf006651/brscan-skey-0.3.1-1.i386.deb
-
 * LPR printer driver
 
   https://download.brother.com/welcome/dlf006180/mfc6490cwlpr-1.1.2-2.i386.deb
@@ -34,32 +26,42 @@ Arch Linux packages for Brother MFC-6490CW printer.
 
   https://download.brother.com/welcome/dlf006182/mfc6490cwcupswrapper-1.1.2-2.i386.deb
 
+* Scanner driver
+
+  https://download.brother.com/welcome/dlf006641/brscan3-0.2.13-1.i386.deb
+
+* Scan key tool
+
+  https://download.brother.com/welcome/dlf006651/brscan-skey-0.3.1-1.i386.deb
+
 
 ## Build
 
-* Update hashes (`sudo pacman -S pacman-contrib`):
+* Pre-requisites
 
   ```
-  updpkgsums PKGBUILD
+  sudo pacman -S pacman-contrib sane lib32-glibc
   ```
 
-* create package (in dir with `PKGBUILD`):
+* Either run `build.sh` and `install.sh` or in each directory:
 
-  ```
-  makepkg
-  ```
+  * Update hashes
 
-* install generated package:
+    ```
+    updpkgsums PKGBUILD
+    ```
 
-  ```
-  sudo pacman -U FILE.tar.xz
-  ```
+  * create package (in dir with `PKGBUILD`):
 
-* install cups (ppd and example printer):
+    ```
+    makepkg
+    ```
 
-  ```
-  sudo /usr/local/Brother/Printer/mfc6490cw/cupswrapper/cupswrappermfc6490cw
-  ```
+  * install generated package:
+
+    ```
+    sudo pacman -U FILE.tar.xz
+    ```
 
 * setup scanner (assuming IP 192.168.X.Y)
 
