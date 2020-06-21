@@ -3,6 +3,7 @@
 function checks {
   command -v updpkgsums >/dev/null 2>&1 || { echo >&2 "updpkgsums not present"; exit 1; }
   command -v makepkg >/dev/null 2>&1 || { echo >&2 "makepkg not present"; exit 1; }
+  sudo pacman -S sane lib32-glibc
 }
 
 function build {
