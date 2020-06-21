@@ -1,0 +1,6 @@
+post_install() {
+	/usr/local/Brother/Printer/mfc6490cw/cupswrapper/cupswrappermfc6490cw -i
+}
+pre_remove() {
+	/usr/local/Brother/Printer/mfc6490cw/cupswrapper/cupswrappermfc6490cw -e
+}

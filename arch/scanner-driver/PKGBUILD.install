@@ -1,0 +1,6 @@
+post_install() {
+	/usr/local/Brother/sane/setupSaneScan3 -i
+}
+pre_remove() {
+	/usr/local/Brother/sane/setupSaneScan3 -e
+}
