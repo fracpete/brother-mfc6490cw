@@ -8,6 +8,8 @@ url="https://support.brother.com/g/b/producttop.aspx?c=us&lang=en&prod=mfc6490cw
 license=("EULA")
 groups=("base-devel")
 source=("https://download.brother.com/welcome/dlf006641/brscan3-0.2.13-1.i386.deb")
+depends=('sane' 'lib32-glibc')
+install=PKGBUILD.install
 md5sums=('6df331421dc2f30ca659b0cac4eece71')
 package() {
         tar -xf data.tar.gz -C "${pkgdir}"

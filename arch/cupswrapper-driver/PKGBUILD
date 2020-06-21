@@ -8,6 +8,7 @@ url="https://support.brother.com/g/b/producttop.aspx?c=us&lang=en&prod=mfc6490cw
 license=("EULA")
 groups=("base-devel")
 source=("https://download.brother.com/welcome/dlf006182/mfc6490cwcupswrapper-1.1.2-2.i386.deb")
+install=PKGBUILD.install
 md5sums=('8c0c560d2fd9b7a019f26968c47e8a0a')
 package() {
         tar -xf data.tar.gz -C "${pkgdir}"
